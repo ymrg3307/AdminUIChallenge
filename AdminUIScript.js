@@ -5,7 +5,7 @@ let memberDetailsList = null;
 let filteredMembersData = null;
 
 const getMembersData = async function () {
-    const membersResponseObject = await fetch("http://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json");
+    const membersResponseObject = await fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json");
     console.log(membersResponseObject)
     memberDetailsList = await membersResponseObject.json();
     filteredMembersData = memberDetailsList.map(member => member);
