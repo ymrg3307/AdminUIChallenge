@@ -1,0 +1,105 @@
+.top-level-container {
+    padding:30px;
+}
+
+
+.search-bar {
+    width:40%;
+    min-width: 200px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-color: lightblue;
+    border-width:4px;
+    border-style: solid;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    width:90%
+}
+
+thead th {
+    border-style:solid;
+    border-width:1px;
+    border-color:#f0f0f0;
+    padding:10px;
+    text-align: left;
+    background-color: lightblue;
+}
+
+
+tbody td{
+    border-style:solid;
+    border-width:1px;
+    border-color:#f0f0f0;
+    padding:10px;
+    text-align: left;
+}
+
+i {
+    height:30px;
+    width:30px;
+    margin-left:5px;
+}
+
+.delete-icon,.cancel-icon{
+    color: red;
+    
+}
+
+.bottom-section {
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-navigation-buttons-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+
+.numbered-navigation-buttons-container {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.navigation-button {
+    margin:0 10px 0 10px;
+    height:40px;
+    width:40px;
+    border-radius: 80px;
+    background-color: #f0f0f0;
+    border: none;
+    text-align: center;
+}
+
+.navigation-button-selected{
+    background-color: lightblue;
+}
+
+.navigation-button:focus { 
+    outline: none;
+}
+
+.delete-button {
+    background-color: red;
+    color:white;
+    border-style:solid;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    padding:6px;
+}
+
+.info-message {
+    color:yellow;
+    text-align: center;
+    display:none;
+}

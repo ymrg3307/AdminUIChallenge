@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="./AdminUI.css">
+    <script type='module' src="./AdminUIScript.js"></script>
+    <script type='module' src="./PaginationScript.js"></script>
+    <script type='module' src="./NavigationScript.js"></script>
+    <script type='module' src="./DeleteAndEditScript.js"></script>
+    <script type='module' src="./MultiSelectAndDelete.js"></script>
+    
+    
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='top-level-container'>
+        <input id='membersSearch' class='search-bar' type='search' placeholder="Search by name,email or role">
+        <table>
+            <thead>
+                <tr class='header-row'>
+                    <th><input id='parentCheckBox' type='checkbox'></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id='membersTableBody'>
+                <h1 id='infoMsg' class='info-message'>No Members found based on your search criteria.</h1>
+            </tbody>
+        </table>
+        <div class='bottom-section'>
+            <button id='multiDeleteButton' class='delete-button'>Delete Selected</button>
+            <div class='page-navigation-buttons-container'>
+                <button id='startPageButton' class='navigation-button'>&lt&lt</button>
+                <button id='prevPageButton' class='navigation-button'>&lt</button>
+                <div id='numberedPagenavigationButtonsContainer' class='numbered-navigation-buttons-container'>
+                </div>
+                <button id='nextPageButton' class='navigation-button'>></button>
+                <button id='lastPageButton' class='navigation-button'>>></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
